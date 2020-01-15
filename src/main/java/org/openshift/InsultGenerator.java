@@ -6,7 +6,7 @@ import java.sql.Statement;
 
 public class InsultGenerator {
 	public String generateInsult() {
-		String vowels = "--> AEIOU";
+		String vowels = "AEIOU";
 		String article = "an";
 		String theInsult = "";
 		
@@ -36,7 +36,7 @@ public class InsultGenerator {
 		} catch (Exception e) {
 			return "Database connection problem!";
 		}
-		return theInsult;
+		return theInsult + "!!!";
 	}
 
 }
